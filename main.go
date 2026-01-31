@@ -1,5 +1,11 @@
 package main
 
+import (
+	"rocli/cli"
+	"rocli/conf"
+)
+
 func main() {
-	packcli()
+	conf.Load()
+	cli.Load()
 }
