@@ -22,5 +22,11 @@ func Load() {
 		internal.DoInitLibJob,
 	)
 
+	Add(
+		"compiler", "安装解释器到项目",
+		internal.DoCompilerJobArgs,
+		internal.DoCompilerJob,
+	)
+
 	Parse()
 }
