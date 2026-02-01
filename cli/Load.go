@@ -16,5 +16,11 @@ func Load() {
 		internal.DoInitJob,
 	)
 
+	Add(
+		"init/lib", "创建空的 rolua 用户扩展包",
+		func(cmd *cobra.Command) {},
+		internal.DoInitLibJob,
+	)
+
 	Parse()
 }

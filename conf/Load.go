@@ -9,7 +9,7 @@ func Load() {
 	mu.Lock()
 	defer mu.Unlock()
 
-	if _, err := os.Stat("project.json"); err != nil {
+	if !IsExist() {
 		return
 	}
 

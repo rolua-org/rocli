@@ -10,13 +10,13 @@ import (
 	"github.com/spf13/cobra"
 )
 
-//go:embed tpl/init/main.lua
+//go:embed tpl/_init/main.lua
 var tpl_main_lua string
 
-//go:embed tpl/init/project.json
+//go:embed tpl/_init/project.json
 var tpl_project_json []byte
 
-//go:embed tpl/init/ropacker-ignore
+//go:embed tpl/_init/ropacker-ignore
 var tpl_ropacker_ignore string
 
 func DoInitJob(cmd *cobra.Command, args []string) {
